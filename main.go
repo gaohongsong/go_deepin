@@ -23,5 +23,7 @@ func main() {
 	fmt.Printf("here is the string *p: %s\n", *p)
 	fmt.Printf("here is the string s: %s\n", s)
 	fmt.Print("aldfjasldjflasdjfl")
-
+	for index := 0; index < 10; index++ {
+		fmt.Println(index)
+	}
 }
