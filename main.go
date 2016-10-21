@@ -34,7 +34,7 @@ func main() {
 	for index := 0; index < 10; index++ {
 		fmt.Println(index)
 	}
-
+	// add by hs
 	foo()
 
 	// var nil_pointer *int = nil
