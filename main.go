@@ -2,11 +2,18 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"time"
 )
 
-func foo() {
+func foo() bool {
 	fmt.Println("start a new line")
 	fmt.Println("adsadsfasdfasfas")
+	if t := true; !t {
+		fmt.Println(t)
+		return true
+	}
+	return false
 }
 
 func main() {
@@ -16,6 +23,7 @@ func main() {
 	var px = &x
 	fmt.Printf("px_value: %d, px_addr: %p\n", *px, px)
 
+	time.Sleep(time.Second * 1)
 	s := "good bye"
 	var p *string = &s
 	*p = "ciao"
@@ -26,4 +34,10 @@ func main() {
 	for index := 0; index < 10; index++ {
 		fmt.Println(index)
 	}
+	foo()
+
+	// var nil_pointer *int = nil
+	// *nil_pointer = 1
+	fmt.Printf("%s", os.Getenv("PATH"))
+	fmt.Printf("%s", os.Getenv("GOPATH"))
 }
