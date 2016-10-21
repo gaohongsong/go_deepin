@@ -34,10 +34,11 @@ func main() {
 	for index := 0; index < 10; index++ {
 		fmt.Println(index)
 	}
+
 	foo()
 
 	// var nil_pointer *int = nil
 	// *nil_pointer = 1
 	fmt.Printf("%s", os.Getenv("PATH"))
-	fmt.Printf("%s", os.Getenv("GOPATH"))
+	// fmt.Printf("%s", os.Getenv("GOPATH"))
 }
