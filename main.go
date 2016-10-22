@@ -6,6 +6,10 @@ import (
 	"time"
 )
 
+func bar(a int) {
+	fmt.Printf("%d", a)
+
+}
 func foo() bool {
 	fmt.Println("start a new line")
 	fmt.Println("adsadsfasdfasfas")
