@@ -8,7 +8,9 @@ import (
 
 func bar(a int) {
 	fmt.Printf("%d", a)
-
+	for i := 1; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
 func foo() bool {
 	fmt.Println("start a new line")
